@@ -40,7 +40,7 @@ function App() {
           className="border-2 border-gray-300 rounded w-full py-2 px-4 mr-4"
           value={inputValue}
           onChange={(e) => setInputValue(e.target.value)}
-          onKeyPress={(e) => e.key === "Enter" && addTodo()}
+          onKeyDown={(e) => e.key === "Enter" && addTodo()}
         />
         <button
           className="bg-blue-500 text-white py-2 px-4 rounded"
